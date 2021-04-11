@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TarefaService } from './tarefa.service';
 
 
 
@@ -7,6 +8,16 @@ import { CommonModule } from '@angular/common';
   declarations: [],
   imports: [
     CommonModule
+  ],
+  providers: [
+    TarefaService
   ]
 })
-export class TarefasModule { }
+export class TarefasModule {
+
+  constructor(){
+
+  }
+
+  
+}
