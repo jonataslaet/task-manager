@@ -35,7 +35,7 @@ export class TarefaService {
     localStorage['tarefas'] = JSON.stringify(tarefas);
   }
 
-  removerPorId(id: number): void {
+  removerPorId(id?: number): void {
     let tarefas: Tarefa[] = this.listarTodos();
     tarefas = tarefas.filter(t => t.id !== id);
     localStorage['tarefas'] = JSON.stringify(tarefas);
