@@ -41,7 +41,7 @@ export class TarefaService {
     localStorage['tarefas'] = JSON.stringify(tarefas);
   }
 
-  alterarStatus(id: number): void {
+  alterarStatus(id?: number): void {
     const tarefas: Tarefa[] = this.listarTodos();
     tarefas.forEach((obj, index, objs) => {
       if (id == obj.id){
